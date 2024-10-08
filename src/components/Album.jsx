@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import ArtistName from "./ArtistName"; // Import ArtistName component
 
 const Album = ({ album }) => {
   return (
@@ -20,23 +21,17 @@ const Album = ({ album }) => {
       {/* Artist names */}
       <p className="artist-names">
         {album.artists.map((artist, index) => (
-          <span key={artist.id}>
-            <a
-              href={artist.external_urls.spotify}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {artist.name}
-            </a>
-            {index < album.artists.length - 1 && ", "}
-          </span>
+          <ArtistName
+            key={artist.id}
+            artist={artist}
+            showComma={index < album.artists.length - 1}
+          />
         ))}
       </p>
     </div>
   );
 };
 
-// Add prop validation outside the component
 Album.propTypes = {
   album: PropTypes.shape({
     name: PropTypes.string.isRequired,
