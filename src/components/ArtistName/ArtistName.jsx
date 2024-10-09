@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import "./ArtistName.css"; // Import the CSS file
 
 export const ArtistName = ({ artist, showComma }) => {
   return (
