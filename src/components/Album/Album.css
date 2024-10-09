@@ -16,10 +16,11 @@
   margin-bottom: 20px;
 }
 
-.album-name,
-.artist-names {
+.album-name
+{
   font-size: 14px;
 }
+
 
 .album:hover .album-cover {
   transform: scale(1.05);
@@ -79,20 +80,9 @@
   color: #ffffff;
 }
 
-.album-name a:hover,
-.artist-names a:hover {
+.album-name a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.artist-names {
-  font-size: 14px;
 
-  margin-top: 5px;
-}
-
-.artist-names a {
-  color: #a0a0a0; /* Set text color to white */
-  text-decoration: none; /* Remove underline by default */
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}

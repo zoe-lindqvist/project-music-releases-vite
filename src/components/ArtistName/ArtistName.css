@@ -1,0 +1,16 @@
+.artist-names a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.artist-names {
+  font-size: 14px;
+
+  margin-top: 5px;
+}
+
+.artist-names a {
+  color: #a0a0a0; /* Set text color to white */
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}

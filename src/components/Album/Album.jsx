@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ArtistName } from "../ArtistName";
+import { ArtistName } from "../ArtistName/ArtistName.jsx";
 import heartIcon from "../../assets/icons/heart.svg";
 import playIcon from "../../assets/icons/play.svg";
 import dotsIcon from "../../assets/icons/dots.svg";
