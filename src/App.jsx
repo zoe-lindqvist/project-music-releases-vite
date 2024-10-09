@@ -2,7 +2,7 @@ import data from "./data.json"; // Spotify data
 import { Header } from "./components/Header/Header.jsx";
 import { Album } from "./components/Album/Album.jsx";
 import "./App.css";
-// import "./Album.css";
+// import heroImage from "./assets/icons/hero.webp"; // Import hero image
 
 export const App = () => {
   return (
