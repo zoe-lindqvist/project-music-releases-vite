@@ -21,6 +21,7 @@
 
 /* Top-left position for the h1 title */
 .header-title {
+  font-family: "Poppins", sans-serif;
   position: absolute;
   top: 20px; /* Adjust spacing from the top */
   left: 20px; /* Adjust spacing from the left */
