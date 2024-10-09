@@ -1,4 +1,4 @@
-import heroVideo from "../../assets/icons/heroVideo.mp4";
+import heroVideo from "../../assets/icons/heroVideo.webm";
 import "./Header.css";
 
 export const Header = () => {
@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="hero-header">
       {/* Video Background */}
       <video className="hero-video" autoPlay loop muted playsInline>
-        <source src={heroVideo} type="video/mp4" />
+        <source src={heroVideo} type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
