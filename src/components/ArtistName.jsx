@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import { PropTypes } from "prop-types";
 
-const ArtistName = ({ artist, showComma }) => {
+export const ArtistName = ({ artist, showComma }) => {
   return (
     <span>
       <a
@@ -24,5 +24,3 @@ ArtistName.propTypes = {
   }).isRequired,
   showComma: PropTypes.bool,
 };
-
-export default ArtistName;

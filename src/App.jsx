@@ -1,18 +1,17 @@
-import "./data.json"; //Spotify data
-// import { Album } from "./components/Album";
+import data from "./data.json"; // Spotify data
 import { Header } from "./components/Header/Header.jsx";
+import { Album } from "./components/Album/Album.jsx";
 
 export const App = () => {
   return (
     <>
-      <Header></Header>
+      <Header />
+      <div>
+        {/* Loop through each album in the data */}
+        {data.albums.items.map((album) => (
+          <Album key={album.id} album={album} />
+        ))}
+      </div>
     </>
-
-    // <div className="album-list">
-    //   {/* Map through the data and render an Album component for each album */}
-    //   {data.albums.items.map((album) => (
-    //     <Album key={album.id} album={album} />
-    //   ))}
-    // </div>
   );
 };

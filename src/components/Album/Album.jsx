@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import ArtistName from "./ArtistName"; // Import ArtistName component
+import { PropTypes } from "prop-types";
+import { ArtistName } from "../ArtistName"; // Import ArtistName component
 
-const Album = ({ album }) => {
+export const Album = ({ album }) => {
   return (
     <div className="album">
       {/* Album cover image */}
@@ -54,5 +54,3 @@ Album.propTypes = {
     ).isRequired,
   }).isRequired,
 };
-
-export default Album;
