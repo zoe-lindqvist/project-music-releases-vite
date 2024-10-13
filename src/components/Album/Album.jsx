@@ -5,9 +5,12 @@ import dotsIcon from "../../assets/icons/dots.svg";
 import "./Album.css";
 
 export const Album = ({ album }) => {
+  // Album component receives an "album" prop, which contains data (name, img and artists) for a SINGLE album.
   return (
     <div className="album">
       <div className="album-cover-container">
+        {/* Container for the album cover image and icons overlay */}
+
         {/* Album cover image */}
         <img
           src={album.images[0].url}
@@ -61,6 +64,7 @@ export const Album = ({ album }) => {
 
       {/* Artist names */}
       <p className="artist-names">
+        {/* it maps through the list of artists for the album, and for each artist, it creates an ArtistName component  */}
         {album.artists.map((artist, index) => (
           <ArtistName
             key={artist.id}
@@ -73,9 +77,12 @@ export const Album = ({ album }) => {
   );
 };
 
+{
+  /* defines the structure of the album prop to ensure everything the Album component needs is provided. */
+}
 Album.propTypes = {
   album: PropTypes.shape({
-    id: PropTypes.string.isRequired, // Ensure `id` is defined here
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     external_urls: PropTypes.shape({
       spotify: PropTypes.string.isRequired,

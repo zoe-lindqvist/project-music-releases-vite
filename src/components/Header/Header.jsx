@@ -12,7 +12,6 @@ export const Header = () => {
 
       {/* Title Overlay */}
       <h1 className="header-title">Musify</h1>
-      {/* <h3>Your latest music releases</h3> */}
     </header>
   );
 };
