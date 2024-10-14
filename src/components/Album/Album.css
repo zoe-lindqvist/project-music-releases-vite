@@ -102,5 +102,5 @@
 .heart-checkbox:checked + .heart-icon {
   filter: invert(41%) sepia(73%) saturate(1500%) hue-rotate(90deg)
     brightness(85%) contrast(95%);
-  transform: scale(1.1); /* Optional scaling effect */
+  transform: scale(1.1);
 }
