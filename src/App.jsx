@@ -1,8 +1,6 @@
 import data from "./data.json"; // Spotify data
 import { Header } from "./components/Header/Header.jsx";
 import { Album } from "./components/Album/Album.jsx";
-
-// import { ArtistName } from "./components/ArtistName/ArtistName.jsx";
 import "./App.css";
 
 export const App = () => {
